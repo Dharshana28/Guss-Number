@@ -1,0 +1,83 @@
+.main{
+    width: 1500px;
+    height: 700px;
+    align-items: center;
+    padding-top: 100px;
+    background-color: rgb(219, 193, 244);
+}
+#start{
+    padding: 2px 20px;
+    color: rgb(14, 10, 10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color:rgb(219, 193, 244) ;
+}
+.game #message{
+    padding: 10px 40px;
+    box-shadow: 5px 5px 5px rgb(45, 44, 44);
+}
+.game #message::placeholder{
+    font-style: italic;
+    font-size: 12px;
+    color: grey;
+}
+.game .image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+}
+.game #submit{
+    padding: 5px 20px;
+    margin: 25px;
+    box-shadow: 4px 4px 4px rgb(45, 44, 44);
+    font-style: black;
+}
+.game #life{
+    padding: 10px;
+}
+.lost{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    background-color:rgb(219, 193, 244) ;    
+}
+.lost #h2{
+    position: relative;
+    right: 50px;
+}
+.lost #retryBtn{
+    padding: 10px 10px;
+    position: relative;
+    top: 50px;
+    right: 250px;
+    background-color: pink;
+    box-shadow: 4px 4px 4px rgb(45, 44, 44);
+}
+.win{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    height: 700px;
+    background-color:rgb(219, 193, 244) ;
+}
+.win #h2{
+    position: relative;
+    right: 70px;
+}
+.win #retryBtn{
+    padding: 10px 10px;
+    position: relative;
+    top: 50px;
+    right: 300px;
+    background-color: pink;
+    box-shadow: 4px 4px 4px rgb(45, 44, 44);
+}
