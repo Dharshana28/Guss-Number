@@ -1,6 +1,5 @@
 
 const livesdisplay=document.getElementById("life")
-const msg=document.getElementById("message")
 const feedback=document.getElementById("your-no-range")
 var randomnum=Math.round(Math.random()*100)
 
@@ -9,11 +8,12 @@ let lives=10
 livesdisplay.innerHTML=" ❤ Lives : "+ lives;
 
 function submitbutton(){
+    
+    const msg=(document.getElementById("message").value)
     lives--;
-    const guess = Number(msg.value);
+    const guess = msg;
     livesdisplay.innerHTML=" ❤ Lives : "+lives;
-
-    if (lives === 0 && guess !== randomnum) {
+    if (lives==0) {
         window.location.href = "./lost.html";
     } 
     else if (guess < randomnum) {
